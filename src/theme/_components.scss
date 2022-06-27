@@ -1,0 +1,19 @@
+body {
+  .accordion-root {
+    margin-top: 24px;
+    padding: 10px;
+    background-color: var(--accordion-background);
+    border-radius: 12px !important;
+    color: var(--aacordion-text);
+    &:before {
+      content: none;
+    }
+    svg {
+      color: var(--accordion-icon);
+    }
+    .MuiTypography-root {
+      font-size: 18px;
+    }
+  }
+}
+

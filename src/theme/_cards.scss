@@ -1,0 +1,122 @@
+body {
+  .mp-nft {
+    &-cards-list {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      position: relative;
+      // width: 100%;
+      margin: 24px auto;
+      margin-left: -12px;
+      margin-right: -12px;
+      @media (max-width: 1240px) {
+        > .justify-content-between {
+          justify-content: space-around;
+        }
+      }
+      &-card {
+        width: 100%;
+        max-width: 320px;
+        padding: 12px;
+
+        &-inner {
+          width: 100%;
+          margin: 0 auto;
+          padding: 16px;
+          background-color: var(--marketplace-nft-background);
+          border: var(--card-border);
+          box-shadow: var(--marketplace-nft-boxshadow);
+          backdrop-filter: blur(108.731px);
+          border-radius: 12px;
+          position: relative;
+          cursor: pointer;
+
+          &:hover {
+            border: 1px solid var(--nft-hover-border);
+          }
+
+          .lazy-load-image-background {
+            width: 100%;
+            height: 0;
+            padding-bottom: 100%;
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+          }
+
+          &-img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            object-fit: cover;
+            object-position: center center;
+          }
+
+          &-tag {
+            position: absolute;
+            top: 32px;
+            right: 32px;
+            font-size: 12px;
+            font-family: 'Montserrat';
+            border-radius: 12px;
+            display: inline-block;
+            color: var(--tag-text);
+            background-color: var(--tag-background);
+            padding: 4px 8px;
+            z-index: 9;
+            font-family: Montserrat;
+          }
+
+          .nft-card-title {
+            word-break: break-word;
+            font-size: 16px;
+            color: var(--nft-card-text);
+            margin-top: 6px;
+            line-height: 1.2;
+            cursor: pointer;
+          }
+
+          .nft-card-sol {
+            word-break: break-word;
+            font-size: 14px;
+            color: var(--nft-sol-text);
+            margin-top: 5px;
+            line-height: 1.2;
+            cursor: pointer;
+            min-height: 14px;
+          }
+
+          .nft-card-staked {
+            word-break: break-word;
+            font-size: 14px;
+            color: yellow;
+            margin-top: 5px;
+            line-height: 1.2;
+            cursor: pointer;
+            min-height: 14px;
+          }
+
+          &-stake {
+            font-size: 12px;
+            line-height: 1;
+            font-family: 'Montserrat';
+            font-weight: bold;
+            border-radius: 12px;
+            display: inline-block;
+            position: absolute;
+            top: 74px;
+            right: 40px;
+            background-color: var(--stake-background);
+            z-index: 9;
+            padding: 4px 8px;
+            color: var(--stake-text);
+          }
+        }
+      }
+    }
+  }
+}
+

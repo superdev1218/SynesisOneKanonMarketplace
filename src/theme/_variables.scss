@@ -1,0 +1,136 @@
+$xs: 0;
+$sm: 600px;
+$md: 900px;
+$lg: 1240px;
+$xl: 1536px;
+
+html[data-theme='dark'] {
+  // general
+  --body-text: #fff;
+  --body-text-600: rgba(255, 255, 255, 0.6);
+  --body-text-700: rgba(255, 255, 255, 0.7);
+  --nav-background: #141424;
+  --button-shadow: 0px 0px 1px rgba(45, 97, 229, 0.12), 0px 2px 4px -1px rgba(27, 10, 82, 0.06),
+    0px 16px 24px rgba(45, 97, 229, 0.12), 0px 8px 8px -4px rgba(45, 97, 229, 0.06), inset 0px 2px 6px rgba(45, 97, 229, 0.4);
+  --button-gradient-background: linear-gradient(135deg, #2d61e5 0%, #8a62f6 53.09%, #e3477e 100%);
+  --button-gray-background: #787878;
+  --button-text: #fff;
+
+  // wallet button colors
+  --nav-wallet-button-border: #6f4376;
+  --nav-wallet-button-text: #f7c5de;
+  --nav-wallet-button-background: rgb(0, 0, 0, 0.5);
+  --nav-wallet-button-shadow: none; // 0 0 4px 0 rgba(255, 255, 255, 0.7);
+  --nav-wallet-button-connected-background: #212335;
+
+  --modal-wallet-button-background: linear-gradient(135deg, #2d61e5 0%, #8a62f6 53.09%, #e3477e 100%);
+  --modal-wallet-button-shadow: 0px 0px 1px rgba(45, 97, 229, 0.24), 0px 2px 4px -1px rgba(10, 70, 82, 0.12),
+    0px 16px 24px rgba(45, 97, 229, 0.24), 0px 8px 8px -4px rgba(45, 97, 229, 0.12);
+
+  --modal-wallet-connected-button-background: #212335;
+
+  // mobile menu
+  --sidebar-background: #27273e;
+  --sidebar-text: #fff;
+  --menu-close-button-background: linear-gradient(135deg, #33334b 0%, #27273e 51.37%, #202036 99.14%);
+  --menu-close-button-text: #fff;
+
+  // footer
+  --footer-background: #152332;
+  --footer-menu-text: #fff;
+
+  // modal
+  --modal-background: #212335;
+  --modal-border: 1px solid rgba(245, 247, 250, 0.06);
+  --modal-hover-border: 1px solid rgba(245, 247, 250, 0.06);
+
+  // landing home section
+  --landing-header-text: #fff;
+
+  // landing
+  --watch-button-background: #fff;
+  --watch-button-text: #000;
+
+  --home-about-background: #202036;
+  --home-about-text: #fff;
+  --home-about-desc-text: rgba(224, 244, 255, 0.6);
+
+  --home-collection-text: #fff;
+  --home-collection-background: #27273e;
+  --home-grid-card-background: #212335;
+
+  --card-border: 1px solid rgba(245, 247, 250, 0.06);
+  --card-hover-border: 1px solid #2d61e5;
+
+  // marketplace
+  --marketplace-background: #202036;
+  --marketplace-title-text: #fff;
+
+  --search-input-background: rgba(224, 224, 255, 0.02);
+  --select-text: #fff;
+  --search-text: rgba(255, 255, 255, 0.6);
+  --search-icon: rgb(148, 147, 147);
+
+  --card-background: #1c1929;
+  --card-text: #fff;
+
+  --marketplace-nft-background: #212335;
+  --marketplace-nft-boxshadow: 0px 1px 1px rgba(20, 16, 41, 0.4), -4px -4px 8px rgba(224, 224, 255, 0.04),
+    8px 8px 24px rgba(20, 16, 41, 0.4);
+  --nft-hover-border: #2d61e5;
+
+  --tag-text: #fff;
+  --tag-background: #2d61e5;
+  --nft-card-text: #fff;
+  --nft-sol-text: #ce9cb4;
+
+  --menu-item-background: #787878;
+  --menu-item-hover-background: #39354f;
+  --menu-item-text: #fff;
+  --menu-item-selected-text: #b644f3;
+
+  // faq
+  --faq-background: #202036;
+  --faq-title-text: #fff;
+
+  // components
+  --accordion-background: rgba(224, 224, 255, 0.02);
+  --aacordion-text: #fff;
+  --accordion-icon: rgba(224, 224, 255, 0.6);
+  --stake-background: #f2d600;
+  --stake-text: #000;
+
+  // general
+  --general-background: #202036;
+  --general-title-text: #fff;
+
+  --round-box-background: rgba(224, 224, 255, 0.02);
+
+  // nft detail
+  --nft-detail-icon-text: #fff;
+  --nft-card-background: linear-gradient(
+    135deg,
+    rgba(245, 247, 250, 0.12) 0%,
+    rgba(245, 247, 250, 0.06) 51.58%,
+    rgba(245, 247, 250, 0.0001) 98.94%
+  );
+  --nft-card-border: 1px solid rgba(245, 247, 250, 0.06);
+  --nft-card-boxshadow: 0px 1px 1px rgba(20, 16, 41, 0.4), -4px -4px 8px rgba(224, 224, 255, 0.04),
+    8px 8px 24px rgba(20, 16, 41, 0.4);
+  --nft-address-text: #6e56f8;
+  --nft-boxshadow: 0px 1px 1px rgb(20 16 41 / 40%), -4px -4px 8px rgb(224 224 255 / 4%), 8px 8px 24px rgb(20 16 41 / 40%);
+}
+
+html[data-theme='light'] {
+  --nav-background: #fff;
+
+  // wallet button colors
+  --nav-wallet-button-border: #6f4376;
+  --nav-wallet-button-text: #f7c5de;
+  --nav-wallet-button-background: rgb(0, 0, 0, 0.5);
+  --nav-wallet-button-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.7);
+  --nav-wallet-button-connected-background: #212335;
+
+  --close-button-icon: rgba(224, 224, 255, 0.24);
+}
+
